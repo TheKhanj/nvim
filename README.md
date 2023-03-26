@@ -39,7 +39,7 @@ know** that there's a solution.
 
 For LSP support I use [coc](https://github.com/neoclide/coc.nvim) plugin. It
 should be noted that for it to work properly **nodejs** and **yarn** package
-manager should be installed on your system. You can install install them by
+manager should be installed on your system. You can install them by
 [nvm](git@github.com:nvm-sh/nvm.git) or [volta](https://docs.volta.sh/guide/).
 I prefer volta personally cause it's written in Rust and is much snappier.
 

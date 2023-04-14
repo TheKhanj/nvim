@@ -62,6 +62,9 @@ return require('packer').startup(function (use)
           },
           json = {
             require('formatter.filetypes.json').jq
+          },
+          lua = {
+            require('formatter.filetypes.json').stylua
           }
         }
       })

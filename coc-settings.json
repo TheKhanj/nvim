@@ -38,5 +38,6 @@
       ],
       "requireRootPattern": false
     }
-  }
+  },
+  "coc.preferences.useQuickfixForLocations": true
 }

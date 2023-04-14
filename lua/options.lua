@@ -10,13 +10,13 @@ vim.opt.swapfile = false
 vim.opt.title = true
 
 -- enable sign column
-vim.opt.signcolumn = 'no'
+vim.opt.signcolumn = "no"
 
 -- virtual edit
-vim.opt.virtualedit = 'all'
+vim.opt.virtualedit = "all"
 
 -- mouse
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- wrap
 vim.opt.wrap = false
@@ -38,21 +38,21 @@ vim.opt.scrolloff = 3
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.inccommand = 'nosplit'
+vim.opt.inccommand = "nosplit"
 
 -- clipboard
-vim.opt.clipboard = 'unnamed,unnamedplus'
+vim.opt.clipboard = "unnamed,unnamedplus"
 
 -- syntax
-vim.cmd('syntax on')
+vim.cmd("syntax on")
 
 -- line width
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = "80"
 
 if vim.g.started_by_firenvim then
-  vim.opt.laststatus = 0
+	vim.opt.laststatus = 0
 end
 
 vim.opt.cursorline = true
 
-vim.opt.listchars = vim.opt.listchars + 'tab:..'
+vim.opt.listchars = vim.opt.listchars + "tab:.."

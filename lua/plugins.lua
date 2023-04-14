@@ -47,6 +47,18 @@ return require('packer').startup(function (use)
           },
           rust = {
             require('formatter.filetypes.rust').rustfmt
+          },
+          cpp = {
+            require('formatter.filetypes.cpp').clangformat
+          },
+          c = {
+            require('formatter.filetypes.c').clangformat
+          },
+          go = {
+            require('formatter.filetypes.go').gofumpt
+          },
+          sh = {
+            require('formatter.filetypes.sh').shfmt
           }
         }
       })

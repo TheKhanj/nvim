@@ -59,6 +59,9 @@ return require('packer').startup(function (use)
           },
           sh = {
             require('formatter.filetypes.sh').shfmt
+          },
+          json = {
+            require('formatter.filetypes.json').jq
           }
         }
       })

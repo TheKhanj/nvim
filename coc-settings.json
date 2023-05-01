@@ -37,6 +37,13 @@
         "psalm.xml.dist"
       ],
       "requireRootPattern": false
+    },
+    "awk": {
+      "command": "awk-language-server",
+      "args": [],
+      "filetypes": [
+        "awk"
+      ]
     }
   },
   "coc.preferences.useQuickfixForLocations": true

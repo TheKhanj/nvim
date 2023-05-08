@@ -13,7 +13,3 @@ vim.api.nvim_set_keymap("", "<c-n>", "<cmd>cne<cr>", { noremap = true })
 vim.api.nvim_set_keymap("", "<c-p>", "<cmd>cpr<cr>", { noremap = true })
 vim.api.nvim_set_keymap("", "<a-n>", "<cmd>lne<cr>", { noremap = true })
 vim.api.nvim_set_keymap("", "<a-p>", "<cmd>lpr<cr>", { noremap = true })
-
--- Tabs
-vim.api.nvim_set_keymap("", "<a-i>", "<esc>gT", { noremap = true })
-vim.api.nvim_set_keymap("", "<a-o>", "<esc>gt", { noremap = true })

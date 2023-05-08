@@ -1,10 +1,4 @@
 {
-  "cSpell.userWords": [
-    "Digikala",
-    "Digipay",
-    "Firebolt",
-    "Kowsar"
-  ],
   "intelephense.files.exclude": [
     "**/.git/**",
     "**/.svn/**",

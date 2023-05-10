@@ -1,5 +1,8 @@
 My configs for neovim.
 
+# Preview
+![Preview](./assets/preview.png)
+
 # Installation
 Clone the project at `~/.config/nvim/`
 `git clone git@github.com:TheKhanj/nvim.git ~/.config/nvim`

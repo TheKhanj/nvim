@@ -23,6 +23,14 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+	vim.g.firenvim_config = {
+		localSettings = {
+			['.*'] = {
+				takeover = 'never',
+			},
+		},
+	}
+
 	use({
 		"mhartington/formatter.nvim",
 		config = function()

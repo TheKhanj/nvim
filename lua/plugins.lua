@@ -25,8 +25,8 @@ return require("packer").startup(function(use)
 
 	vim.g.firenvim_config = {
 		localSettings = {
-			['.*'] = {
-				takeover = 'never',
+			[".*"] = {
+				takeover = "never",
 			},
 		},
 	}
@@ -71,6 +71,9 @@ return require("packer").startup(function(use)
 					},
 					json = {
 						require("formatter.filetypes.json").jq,
+					},
+					yaml = {
+						require("formatter.filetypes.yaml").prettier,
 					},
 					lua = {
 						require("formatter.filetypes.lua").stylua,

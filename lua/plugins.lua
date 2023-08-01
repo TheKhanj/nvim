@@ -165,6 +165,7 @@ return require("packer").startup(function(use)
 			vim.opt.updatetime = 200
 			vim.api.nvim_set_keymap("i", "<c-space>", "coc#refresh()", { noremap = true, silent = true, expr = true })
 			vim.api.nvim_set_keymap("n", "gd", "<Plug>(coc-definition)", { noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "gD", "<Plug>(coc-declaration)", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "gi", "<Plug>(coc-implementation)", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "gr", "<Plug>(coc-references)", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "<leader>cw", "<Plug>(coc-rename)", { noremap = true, silent = true })

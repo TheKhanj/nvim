@@ -73,7 +73,7 @@ return require("packer").startup(function(use)
 						require("formatter.filetypes.json").jq,
 					},
 					lua = {
-						require("formatter.filetypes.json").stylua,
+						require("formatter.filetypes.lua").stylua,
 					},
 				},
 			})

@@ -44,6 +44,9 @@ return require("packer").startup(function(use)
 					typescript = {
 						require("formatter.filetypes.typescript").prettier,
 					},
+					html = {
+						require("formatter.filetypes.html").prettier,
+					},
 					php = {
 						function()
 							return {
@@ -71,6 +74,9 @@ return require("packer").startup(function(use)
 					},
 					json = {
 						require("formatter.filetypes.json").jq,
+					},
+					jsonc = {
+						require("formatter.filetypes.json").prettier,
 					},
 					yaml = {
 						require("formatter.filetypes.yaml").prettier,
@@ -149,7 +155,16 @@ return require("packer").startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		config = function()
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = { "typescript", "javascript", "java", "php" },
+				ensure_installed = {
+					"typescript",
+					"javascript",
+					"java",
+					"php",
+					"lua",
+					"c",
+					"cpp",
+					"vim",
+				},
 				highlight = {
 					enable = true,
 				},

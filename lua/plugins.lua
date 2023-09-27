@@ -3,6 +3,7 @@ vim.cmd("packadd packer.nvim")
 vim.g.sonokai_disable_italic_comment = 1
 
 return require("packer").startup(function(use)
+	use({ "vim-scripts/vis" })
 	use({ "tpope/vim-fugitive" })
 	use({ "tpope/vim-surround" })
 	use({ "xiyaowong/transparent.nvim" })

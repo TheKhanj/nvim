@@ -6,7 +6,6 @@ return require("packer").startup(function(use)
 	use({ "vim-scripts/vis" })
 	use({ "tpope/vim-fugitive" })
 	use({ "tpope/vim-surround" })
-	use({ "xiyaowong/transparent.nvim" })
 
 	use({
 		"thekhanj/sonokai",

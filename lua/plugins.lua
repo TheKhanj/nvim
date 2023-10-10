@@ -8,6 +8,17 @@ return require("packer").startup(function(use)
 	use({ "tpope/vim-surround" })
 
 	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo-comments").setup({})
+
+			vim.api.nvim_set_keymap("n", "<leader>cc", "<cmd>TodoQuickFix<cr>", { noremap = true })
+			vim.api.nvim_set_keymap("n", "<leader>cl", "<cmd>TodoLocList<cr>", { noremap = true })
+		end
+	})
+
+	use({
 		"thekhanj/sonokai",
 		config = function()
 			vim.cmd("colorscheme sonokai")

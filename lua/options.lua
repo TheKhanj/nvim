@@ -51,6 +51,7 @@ vim.opt.colorcolumn = "80"
 
 if vim.g.started_by_firenvim then
 	vim.opt.laststatus = 0
+	vim.api.nvim_set_keymap("n", "<c-b>z", "<cmd>set lines=100 | set columns=200<cr>", { noremap = true, silent = true })
 end
 
 vim.opt.cursorline = true

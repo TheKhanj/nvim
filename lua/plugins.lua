@@ -14,8 +14,7 @@ return require("packer").startup(function(use)
 			require("todo-comments").setup({})
 
 			vim.api.nvim_set_keymap("n", "<leader>cc", "<cmd>TodoQuickFix<cr>", { noremap = true })
-			vim.api.nvim_set_keymap("n", "<leader>cl", "<cmd>TodoLocList<cr>", { noremap = true })
-		end
+		end,
 	})
 
 	use({

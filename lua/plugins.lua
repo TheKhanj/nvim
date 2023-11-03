@@ -67,6 +67,9 @@ return require("packer").startup(function(use)
 							}
 						end,
 					},
+					python = {
+						require("formatter.filetypes.python").black,
+					},
 					rust = {
 						require("formatter.filetypes.rust").rustfmt,
 					},

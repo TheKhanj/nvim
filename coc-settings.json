@@ -1,15 +1,4 @@
 {
-  "intelephense.files.exclude": [
-    "**/.git/**",
-    "**/.svn/**",
-    "**/.hg/**",
-    "**/CVS/**",
-    "**/.DS_Store/**",
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/.history/**",
-    "**/vendor/**/vendor/**"
-  ],
   "languageserver": {
     "sqls": {
       "command": "sqls",
@@ -17,20 +6,6 @@
         "sql"
       ],
       "shell": true
-    },
-    "psalmls": {
-      "command": "psalm",
-      "args": [
-        "--language-server"
-      ],
-      "filetypes": [
-        "php"
-      ],
-      "rootPatterns": [
-        "psalm.xml",
-        "psalm.xml.dist"
-      ],
-      "requireRootPattern": false
     },
     "awk": {
       "command": "awk-language-server",

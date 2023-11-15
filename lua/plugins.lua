@@ -3,7 +3,6 @@ vim.cmd("packadd packer.nvim")
 vim.g.sonokai_disable_italic_comment = 1
 
 return require("packer").startup(function(use)
-	use({ "vim-scripts/vis" })
 	use({ "tpope/vim-fugitive" })
 	use({ "tpope/vim-surround" })
 
@@ -23,8 +22,6 @@ return require("packer").startup(function(use)
 			vim.cmd("colorscheme sonokai")
 		end,
 	})
-
-	use({ "nelsyeung/twig.vim" })
 
 	use({
 		"glacambre/firenvim",
@@ -48,6 +45,9 @@ return require("packer").startup(function(use)
 
 			require("formatter").setup({
 				filetype = {
+					sql = {
+						require("formatter.filetypes.sql").pgformat,
+					},
 					javascript = {
 						require("formatter.filetypes.javascript").prettier,
 					},

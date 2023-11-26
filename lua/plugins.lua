@@ -5,6 +5,7 @@ vim.g.sonokai_disable_italic_comment = 1
 return require("packer").startup(function(use)
 	use({ "tpope/vim-fugitive" })
 	use({ "tpope/vim-surround" })
+	use({ "editorconfig/editorconfig-vim" })
 
 	use({
 		"folke/todo-comments.nvim",

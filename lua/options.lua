@@ -57,3 +57,5 @@ end
 vim.opt.cursorline = true
 
 vim.opt.listchars = vim.opt.listchars + "tab:.."
+
+vim.opt.termbidi = true

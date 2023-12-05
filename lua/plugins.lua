@@ -50,13 +50,13 @@ return require("packer").startup(function(use)
 						require("formatter.filetypes.sql").pgformat,
 					},
 					javascript = {
-						require("formatter.filetypes.javascript").prettier,
+						require("formatter.filetypes.javascript").prettierd,
 					},
 					typescript = {
-						require("formatter.filetypes.typescript").prettier,
+						require("formatter.filetypes.typescript").prettierd,
 					},
 					html = {
-						require("formatter.filetypes.html").prettier,
+						require("formatter.filetypes.html").prettierd,
 					},
 					php = {
 						function()
@@ -90,10 +90,10 @@ return require("packer").startup(function(use)
 						require("formatter.filetypes.json").jq,
 					},
 					jsonc = {
-						require("formatter.filetypes.json").prettier,
+						require("formatter.filetypes.json").prettierd,
 					},
 					yaml = {
-						require("formatter.filetypes.yaml").prettier,
+						require("formatter.filetypes.yaml").prettierd,
 					},
 					lua = {
 						require("formatter.filetypes.lua").stylua,

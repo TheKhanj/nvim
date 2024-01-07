@@ -6,6 +6,8 @@ local function spacify_filetype(filetype, tab_size)
 end
 
 spacify_filetype("php", 4)
+spacify_filetype("python2", 4)
+spacify_filetype("python", 4)
 spacify_filetype("javascript", 2)
 spacify_filetype("typescript", 2)
 spacify_filetype("json", 2)

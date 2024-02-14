@@ -56,7 +56,10 @@ return require("packer").startup(function(use)
 						require("formatter.filetypes.typescript").prettierd,
 					},
 					html = {
-						require("formatter.filetypes.html").prettierd,
+						require("formatter.filetypes.html").tidy,
+					},
+					xml = {
+						require("formatter.filetypes.xml").tidy,
 					},
 					php = {
 						function()

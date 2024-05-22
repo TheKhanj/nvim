@@ -52,8 +52,14 @@ return require("packer").startup(function(use)
 					javascript = {
 						require("formatter.filetypes.javascript").prettierd,
 					},
+					javascriptreact = {
+						require("formatter.filetypes.javascriptreact").prettierd,
+					},
 					typescript = {
 						require("formatter.filetypes.typescript").prettierd,
+					},
+					typescriptreact = {
+						require("formatter.filetypes.typescriptreact").prettierd,
 					},
 					html = {
 						require("formatter.filetypes.html").prettierd,

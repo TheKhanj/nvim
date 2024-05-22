@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+mkdir -p ~/.config/nvim
+stow -vt $HOME/.config/nvim .

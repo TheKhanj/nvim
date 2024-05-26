@@ -15,5 +15,5 @@
       ]
     }
   },
-  "coc.preferences.useQuickfixForLocations": true
+  "inlayHint.enable": false
 }

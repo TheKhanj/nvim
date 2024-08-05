@@ -13,6 +13,18 @@
       "filetypes": [
         "awk"
       ]
+    },
+    "meson": {
+      "command": "mesonlsp",
+      "args": [
+        "--lsp"
+      ],
+      "rootPatterns": [
+        "meson.build"
+      ],
+      "filetypes": [
+        "meson"
+      ]
     }
   },
   "inlayHint.enable": false

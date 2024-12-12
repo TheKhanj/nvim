@@ -1,6 +1,8 @@
 -- Shortcuts
 vim.api.nvim_set_keymap("", ";", ":", { noremap = true })
 vim.api.nvim_set_keymap("", ":", ";", { noremap = true })
+vim.api.nvim_set_keymap("", "vv", "V", { noremap = true })
+vim.api.nvim_set_keymap("i", "kj", "<esc>", { noremap = true })
 
 -- Buffer
 vim.api.nvim_set_keymap("", "<c-h>", "10zh", { noremap = true })

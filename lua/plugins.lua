@@ -84,6 +84,9 @@ return require("packer").startup(function(use)
 					xml = {
 						require("formatter.filetypes.xml").tidy,
 					},
+					dart = {
+						require("formatter.filetypes.dart").dartformat,
+					},
 					php = {
 						function()
 							return {

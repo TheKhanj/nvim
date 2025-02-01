@@ -89,6 +89,9 @@ return require("packer").startup(function(use)
 					cpp = {
 						require("formatter.filetypes.cpp").clangformat,
 					},
+					arduino = {
+						require("formatter.filetypes.cpp").clangformat,
+					},
 					c = {
 						require("formatter.filetypes.c").clangformat,
 					},

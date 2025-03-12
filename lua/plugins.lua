@@ -8,6 +8,23 @@ return require("packer").startup(function(use)
 	use({ "editorconfig/editorconfig-vim" })
 
 	use({
+		"haserl.vim",
+		config = function()
+			local url = "https://grimblefritz.com/haserl/haserl.vim"
+			local syntax_dir = vim.fn.stdpath("config") .. "/syntax/"
+			print(syntax_dir)
+			local syntax_file = syntax_dir .. "haserl.vim"
+
+			vim.fn.mkdir(syntax_dir, "p")
+
+			if vim.fn.filereadable(syntax_file) == 0 then
+				local cmd = string.format("curl -fsSL -o %s %s", syntax_file, url)
+				os.execute(cmd)
+			end
+		end,
+	})
+
+	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 		config = function()

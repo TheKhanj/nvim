@@ -63,6 +63,23 @@ return require("packer").startup(function(use)
 
 			require("formatter").setup({
 				filetype = {
+					sourcepawn = {
+						function()
+							return {
+								exe = "sh",
+								args = {
+									"-c",
+									"echo | sp_format"
+										.. " --breaks-before-enum 1"
+										.. " --breaks-before-enum-struct 1"
+										.. " --breaks-before-function-decl 1"
+										.. " --breaks-before-function-def 1"
+										.. " --breaks-before-methodmap 1",
+								},
+								stdin = false,
+							}
+						end,
+					},
 					sql = {
 						require("formatter.filetypes.sql").pgformat,
 					},

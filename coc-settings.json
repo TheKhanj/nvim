@@ -1,5 +1,11 @@
 {
   "languageserver": {
+    "sourcepawn": {
+      "command": "sourcepawn-studio",
+      "filetypes": [
+        "sourcepawn"
+      ]
+    },
     "sqls": {
       "command": "sqls",
       "filetypes": [

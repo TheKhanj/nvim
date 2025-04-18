@@ -4,7 +4,17 @@
       "command": "sourcepawn-studio",
       "filetypes": [
         "sourcepawn"
-      ]
+      ],
+      "settings": {
+        "SourcePawnLanguageServer": {
+          "includeDirectories": [
+            "/usr/local/share/sourcemod/addons/sourcemod/scripting/include"
+          ],
+          "compiler": {
+            "path": "/usr/local/share/sourcemod/addons/sourcemod/scripting/spcomp"
+          }
+        }
+      }
     },
     "sqls": {
       "command": "sqls",

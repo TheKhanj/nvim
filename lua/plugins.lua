@@ -81,7 +81,7 @@ return require("packer").startup(function(use)
 						end,
 					},
 					sql = {
-						require("formatter.filetypes.sql").pgformat,
+						require("formatter.filetypes.sql").sql_formatter,
 					},
 					javascript = {
 						require("formatter.filetypes.javascript").prettierd,

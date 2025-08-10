@@ -40,23 +40,6 @@ return require("packer").startup(function(use)
 	}
 
 	use({
-		"haserl.vim",
-		as = "haserl",
-		config = function()
-			local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/haserl"
-			if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-				vim.fn.system({ "mkdir", "-p", install_path .. "/syntax" })
-				vim.fn.system({
-					"curl",
-					"-fLo",
-					install_path .. "/syntax/haserl.vim",
-					"https://grimblefritz.com/haserl/haserl.vim",
-				})
-			end
-		end,
-	})
-
-	use({
 		"mhartington/formatter.nvim",
 		config = function()
 			vim.api.nvim_set_keymap("n", "<leader>a", "<cmd>Format<cr>", { noremap = true, silent = true })
@@ -221,7 +204,7 @@ return require("packer").startup(function(use)
 
 	use({
 		"neoclide/coc.nvim",
-		run = "yarn install --frozen-lockfile",
+		run = "npm ci",
 		config = function()
 			vim.opt.updatetime = 200
 			vim.api.nvim_set_keymap("i", "<c-space>", "coc#refresh()", { noremap = true, silent = true, expr = true })

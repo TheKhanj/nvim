@@ -63,6 +63,9 @@ return require("packer").startup(function(use)
 							}
 						end,
 					},
+					caddy = {
+						require("formatter.filetypes.caddy").caddy,
+					},
 					sql = {
 						require("formatter.filetypes.sql").pgformat,
 					},

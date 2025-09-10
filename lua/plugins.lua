@@ -106,6 +106,9 @@ return require("packer").startup(function(use)
 					rust = {
 						require("formatter.filetypes.rust").rustfmt,
 					},
+					ruby ={
+						require("formatter.filetypes.ruby").standardrb,
+					},
 					cpp = {
 						require("formatter.filetypes.cpp").clangformat,
 					},

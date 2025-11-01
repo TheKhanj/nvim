@@ -51,7 +51,12 @@ vim.opt.colorcolumn = "80"
 
 if vim.g.started_by_firenvim then
 	vim.opt.laststatus = 0
-	vim.api.nvim_set_keymap("n", "<c-b>z", "<cmd>set lines=100 | set columns=200<cr>", { noremap = true, silent = true })
+	vim.api.nvim_set_keymap(
+		"n",
+		"<c-b>z",
+		"<cmd>set lines=100 | set columns=200<cr>",
+		{ noremap = true, silent = true }
+	)
 end
 
 vim.opt.cursorline = true
@@ -60,3 +65,5 @@ vim.opt.listchars = vim.opt.listchars + "tab:.."
 
 vim.opt.termbidi = true
 vim.opt.termguicolors = false
+
+vim.opt.iskeyword = "@,48-57,_,192-255"

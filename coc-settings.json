@@ -41,6 +41,18 @@
       "filetypes": [
         "meson"
       ]
+    },
+    "unocss": {
+      "command": "unocss-language-server",
+      "args": [
+        "--stdio"
+      ],
+      "filetypes": [
+        "typescriptreact",
+        "javascriptreact",
+        "vue",
+        "svelte"
+      ]
     }
   },
   "inlayHint.enable": false,

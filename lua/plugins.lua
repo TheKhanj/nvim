@@ -133,6 +133,9 @@ return require("packer").startup(function(use)
 					yaml = {
 						require("formatter.filetypes.yaml").prettierd,
 					},
+					css = {
+						require("formatter.filetypes.css").prettierd,
+					},
 					lua = {
 						require("formatter.filetypes.lua").stylua,
 					},

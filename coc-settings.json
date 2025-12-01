@@ -53,6 +53,19 @@
         "vue",
         "svelte"
       ]
+    },
+    "tsgo": {
+      "command": "tsgo",
+      "args": [
+        "--lsp",
+        "--stdio"
+      ],
+      "filetypes": [
+        "typescript",
+        "javascript",
+        "typescriptreact",
+        "javascriptreact"
+      ]
     }
   },
   "inlayHint.enable": false,

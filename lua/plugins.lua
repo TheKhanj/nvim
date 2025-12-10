@@ -106,7 +106,7 @@ return require("packer").startup(function(use)
 					rust = {
 						require("formatter.filetypes.rust").rustfmt,
 					},
-					ruby ={
+					ruby = {
 						require("formatter.filetypes.ruby").standardrb,
 					},
 					cpp = {
@@ -138,6 +138,9 @@ return require("packer").startup(function(use)
 					},
 					lua = {
 						require("formatter.filetypes.lua").stylua,
+					},
+					nix = {
+						require("formatter.filetypes.nix").nixfmt,
 					},
 				},
 			})

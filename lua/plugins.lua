@@ -40,7 +40,7 @@ return require("packer").startup(function(use)
 	}
 
 	use({
-		"mhartington/formatter.nvim",
+		"thekhanj/formatter.nvim",
 		config = function()
 			vim.api.nvim_set_keymap("n", "<leader>a", "<cmd>Format<cr>", { noremap = true, silent = true })
 

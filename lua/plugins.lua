@@ -6,7 +6,6 @@ return require("packer").startup(function(use)
 	use({ "tpope/vim-fugitive" })
 	use({ "tpope/vim-surround" })
 	use({ "editorconfig/editorconfig-vim" })
-	use({ "mustache/vim-mustache-handlebars" })
 
 	use({
 		"folke/todo-comments.nvim",

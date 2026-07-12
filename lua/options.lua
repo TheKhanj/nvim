@@ -71,5 +71,3 @@ vim.opt.iskeyword = "@,48-57,_,192-255"
 -- load .vim from projects
 vim.opt.exrc = true
 vim.opt.secure = true
-
-vim.opt.conceallevel = 2

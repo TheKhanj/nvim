@@ -8,22 +8,6 @@ return require("packer").startup(function(use)
 	use({ "editorconfig/editorconfig-vim" })
 
 	use({
-		"epwalsh/obsidian.nvim",
-		tag = "*",
-		requires = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("obsidian").setup({
-				workspaces = {
-					{
-						name = "personal",
-						path = "~/notes",
-					},
-				},
-			})
-		end,
-	})
-
-	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 		config = function()

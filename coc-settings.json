@@ -1,5 +1,11 @@
 {
   "languageserver": {
+    "slint": {
+      "filetypes": [
+        "slint"
+      ],
+      "command": "slint-lsp"
+    },
     "sourcepawn": {
       "command": "sourcepawn-studio",
       "filetypes": [

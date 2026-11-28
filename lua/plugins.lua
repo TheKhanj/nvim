@@ -47,6 +47,15 @@ return require("packer").startup(function(use)
 
 			require("formatter").setup({
 				filetype = {
+					c3 = {
+						function()
+							return {
+								exe = "c3-fmt",
+								args = { "-i" },
+								stdin = false,
+							}
+						end,
+					},
 					sourcepawn = {
 						function()
 							return {

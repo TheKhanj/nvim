@@ -212,26 +212,31 @@ return require("packer").startup(function(use)
 
 	use({
 		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
 		config = function()
-			require("nvim-treesitter.configs").setup({
-				ensure_installed = {
-					"typescript",
-					"javascript",
-					"java",
-					"php",
-					"lua",
-					"c",
-					"cpp",
-					"vim",
-				},
-				highlight = {
-					enable = true,
-				},
+			require("nvim-treesitter").setup()
+
+			require("nvim-treesitter").install({
+				"typescript",
+				"javascript",
+				"java",
+				"php",
+				"lua",
+				"c",
+				"c3",
+				"cpp",
+				"vim",
 			})
 
-			vim.opt.foldmethod = "indent"
-			vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+			vim.opt.foldmethod = "expr"
+			vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 			vim.opt.foldlevel = 99
+
+			vim.api.nvim_create_autocmd("FileType", {
+				callback = function()
+					pcall(vim.treesitter.start)
+				end,
+			})
 		end,
 	})
 

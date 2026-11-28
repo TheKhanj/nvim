@@ -1,5 +1,11 @@
 {
   "languageserver": {
+    "c3": {
+      "filetypes": [
+        "c3"
+      ],
+      "command": "c3-lsp-tonis2"
+    },
     "slint": {
       "filetypes": [
         "slint"
